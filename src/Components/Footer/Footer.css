@@ -1,0 +1,9 @@
+footer a:hover {
+  color: #29ABE2 !important;
+  text-decoration: underline;
+}
+
+.bg-footer{
+    background: linear-gradient(135deg, #0C67A0, #005F8D, #003f63);
+
+}

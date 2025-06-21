@@ -1,0 +1,84 @@
+.offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #0C67A0, #29ABE2); /* Rich gradient */
+  padding: 40px 60px;
+  border-radius: 20px;
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.offers-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.offers-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.offers-left p {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.offers-left button {
+  background-color: #fff;
+  color: #0C67A0;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.offers-left button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+}
+
+.offers-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .offers-left h1 {
+    font-size: 36px;
+  }
+
+  .offers-left p {
+    font-size: 16px;
+  }
+
+  .offers-left button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

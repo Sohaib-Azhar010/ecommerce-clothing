@@ -1,0 +1,30 @@
+.breadcrumb-wrapper {
+  background: linear-gradient(135deg, #0C67A0, #005F8D);
+  padding: 14px 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.crumb-link {
+  color: #ffffffcc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.crumb-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.crumb-current {
+  color: #fff;
+}
+
+.crumb-arrow {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}

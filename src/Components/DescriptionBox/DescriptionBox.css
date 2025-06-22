@@ -1,0 +1,37 @@
+.description-box {
+  border-radius: 16px;
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.description-box:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.desc-tabs .desc-tab {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  padding-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.desc-tabs .desc-tab.active {
+  color: #0C67A0;
+  border-bottom: 2px solid #0C67A0;
+}
+
+.desc-content {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.review-list p {
+  margin-bottom: 12px;
+}

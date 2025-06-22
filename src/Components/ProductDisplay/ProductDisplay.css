@@ -1,0 +1,33 @@
+.product-price .new-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0C67A0;
+}
+
+.product-price .old-price {
+  font-size: 18px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.main-product-image {
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.custom-btn {
+  background-color: #0C67A0;
+  border: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #09537d;
+}
+
+.product-description {
+  font-size: 15px;
+  line-height: 1.6;
+}

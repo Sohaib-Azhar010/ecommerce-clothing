@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import logo from '../Assets/logo.png';
 import cart_logo from '../Assets/cart_icon.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; // For custom styles like nav-cart-count
+import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+  const { getTotalCartItems } = useContext(ShopContext);
+  console.log("Total items in cart:", getTotalCartItems());
+
 
   return (
     <nav className="navbar navbar-expand-lg bg-white shadow-sm px-4 py-3 sticky-top">
@@ -65,7 +69,7 @@ const Navbar = () => {
             </Link>
             <Link to="/cart" className="position-relative">
               <img src={cart_logo} alt="cart" width="28" />
-              <span className="nav-cart-count">0</span>
+              <span className="nav-cart-count">{getTotalCartItems() || 0}</span>
             </Link>
           </div>
         </div>
